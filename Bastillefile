@@ -1,0 +1,5 @@
+PKG vnstat
+CMD mkdir /var/db/vnstat
+CMD chown vnstat:vnstat /var/db/vnstat
+SYSRC vnstat_enable=YES
+SERVICE vnstat start
